@@ -1,75 +1,80 @@
-.container {
-margin: 0;
-display: flex;
-justify-content: end !important;
-}
-.cuerpoTienda{
+.cuerpoTienda {
     display: flex;
     width: 300px;
 }
-.tienda{
-    background-color:#6ECCBA;
+
+.tienda {
+    background-color: #6ECCBA;
     align-items: center;
     width: 300px;
-    padding-top: 100px; 
-    transition: transform 0.2s ease-in-out; 
+    padding-top: 100px;
+    transition: transform 0.2s ease-in-out;
 }
-.tienda:hover{
+
+.tienda:hover {
     transform: translateX(-5px);
 }
-.filter{
-    font-family:"Open Sans", sans-serif;
+
+.filter {
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
     color: black;
     transition: 0.2s ease-in-out;
     cursor: pointer;
     margin-top: 20px;
-    
+
 }
-.filter:hover{  
-    font-weight: bold;  
+
+.filter:hover {
+    font-weight: bold;
 }
-.ropa{
-    font-family:"Open Sans", sans-serif;
+
+.ropa {
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
     color: black;
     transition: 0.2s ease-in-out;
     cursor: pointer;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
-.ropa:hover{
+
+.ropa:hover {
     font-weight: bold;
 }
-.accesorios{
-    font-family:"Open Sans", sans-serif;
-    text-decoration: none;
-    color: black;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-}
-.accesorios:hover{
-    font-weight: bold;
-}
-.hogar{
-    font-family:"Open Sans", sans-serif;
+
+.accesorios {
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
     color: black;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
 
-.hogar:hover{
+.accesorios:hover {
     font-weight: bold;
 }
 
-.sale{
-    font-family:"Open Sans", sans-serif;
+.hogar {
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
     color: black;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
-.sale:hover{
+
+.hogar:hover {
+    font-weight: bold;
+}
+
+.sale {
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.sale:hover {
     font-weight: bold;
 }
 
@@ -80,14 +85,15 @@ justify-content: end !important;
 }
 
 .section1 {
-    background-color:   #FFFFE3;
+    background-color: #FFFFE3;
     width: 1200px;
     display: flex;
     justify-self: end;
     margin-top: 0;
 }
---------------------------prouctos, tajetas
-body {
+
+--------------------------prouctos,
+tajetas body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -115,8 +121,13 @@ body {
     width: 204px;
     height: 27px;
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     color: #333;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
 }
 
 .buy-button {
@@ -128,21 +139,40 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .infocolor {
-    color:black
+    color: black
 }
-.buy-button1{
-    margin-right: 50px;
+
+.buy-button1 {
     background-color: #6ECCBA;
 }
-h4{
+
+h4 {
     font-size: 15px;
+    margin: 0px;
+    gap: 0;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
 }
+
 h3 {
-    font-size: 14px;
+    font-size: 15px;
+    margin: 0px;
+    gap: 0;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
 }
 
+.card-title {
+    font-size: 24px;
+}
 
+.botones {
+    justify-content: center;
+    gap: 50px;
+}
