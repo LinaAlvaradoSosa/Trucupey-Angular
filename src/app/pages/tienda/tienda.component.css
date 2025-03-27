@@ -92,8 +92,8 @@
     margin-top: 0;
 }
 
---------------------------prouctos,
-tajetas body {
+--------------------------prouctos,tajetas 
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -109,8 +109,13 @@ tajetas body {
     margin-right: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    transition: transform 0.3s ease-in-out;
 }
-
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+}
 .image-box {
     width: 250px;
     height: 250px;
@@ -149,7 +154,16 @@ tajetas body {
 .buy-button1 {
     background-color: #6ECCBA;
 }
-
+.buy-button {
+    transition: transform 0.2s ease-in-out;
+}
+.buy-button:hover {
+    transform: scale(1.1);
+}
+.buy-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
 h4 {
     font-size: 15px;
     margin: 0px;

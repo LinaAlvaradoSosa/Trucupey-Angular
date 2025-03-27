@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2F2638;
+}
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #6ECCBA;
+    width: 100%; 
+    height: 700px;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+.image-box {
+    width: 250px;
+    height: 250px;
+    background-color: #ddd;
+}
+.description {
+    text-align: center;
+    font-size: 24px;
+    color: black;
+}
+.description2 {
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    text-decoration: underline;
+}
+.buy-button {
+    width: 99px;
+    height: 53px;
+    background-color: #FFA19C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.infocolor {
+    color:black
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.section1 {
+    background-color: #2F2638;   
+    padding-bottom: 8rem;
+}
+.logofooter3 {
+transform: translate(101px,93px);
+}
+.tittle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    color: #FFFFE3;
+    text-align: center;
+    padding-top: 60px; 
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Optional background for the body */
+}
+.contact-box {
+    width: 803px;
+    height: 600px;
+    background-color: #6ECCBA;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 60px auto 0 auto; 
+}
+.contact-title {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    color: black;
+}
+.buttonfooter2 {
+    background-color:#FF925C;
+    border-color: #FF925C;
+    color: white;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.formOne {
+background-color: #6ECCBA;
+}
+.Iva {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+.btn5 {
+display: flex;
+justify-content: center;
+}
