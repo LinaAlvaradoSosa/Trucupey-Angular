@@ -1,0 +1,100 @@
+<div class="contenedor">     
+    <div class="buscador-container">
+        <input (input)="buscar()" [formControl]="(busqueda)" type="text" class="input-busqueda" placeholder="Buscar productos..." />
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre del Producto</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products; trackBy: trackByFn">
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>
+                    <button (click)="getOneProduct(product._id)" type="button" class="btn btn-primary btn-actualizar" 
+                        data-bs-toggle="modal" [attr.data-bs-target]="'#'+product._id">
+                        Actualizar
+                    </button>
+                    <button (click)="deleteProduct(product._id)" class="btn-borrar" type="button">Borrar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-primary agregarProducto" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar un producto</button>
+</div>
+
+<!-- MODALES ACTUALIZAR -->
+<div *ngFor="let product of products; trackBy: trackByFn">
+    <div class="modal fade" id="{{product._id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Producto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                </div>
+                <div class="modal-body">
+                    <form [formGroup]="formEdit">
+                        <label for="name">Nombre:</label>
+                        <input id="name" type="text" formControlName="name" placeholder="Ingrese el nombre">
+                        
+                        <label for="size">Talla:</label>
+                        <input id="size" type="text" formControlName="size" placeholder="Ingrese la talla">
+                        
+                        <label for="type">Tipo:</label>
+                        <input id="type" type="text" formControlName="type" placeholder="Ingrese el tipo">
+                        
+                        <label for="imagen">Imagen (URL):</label>
+                        <input id="imagen" type="text" formControlName="imagen" placeholder="Ingrese la URL de la imagen">
+                        
+                        <label for="price">Precio:</label>
+                        <input id="price" type="number" formControlName="price" placeholder="Ingrese el precio">
+                        
+                        <button type="submit" (click)="update(product._id)">Actualizar Producto</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- MODALES CREAR UN NUEVO PRODUCTO  -->
+
+<div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar un nuevo producto Trucupey</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                </div>
+                <div class="modal-body">
+                    <form [formGroup]="FormProduct">
+                        <label for="name">Nombre:</label>
+                        <input id="name" type="text" formControlName="name" placeholder="Ingrese el nombre">
+                        
+                        <label for="size">Talla:</label>
+                        <input id="size" type="text" formControlName="size" placeholder="Ingrese la talla">
+                        
+                        <label for="type">Tipo:</label>
+                        <input id="type" type="text" formControlName="type" placeholder="Ingrese el tipo">
+                        
+                        <label for="imagen">Imagen (URL):</label>
+                        <input id="imagen" type="text" formControlName="imagen" placeholder="Ingrese la URL de la imagen">
+                        
+                        <label for="price">Precio:</label>
+                        <input id="price" type="number" formControlName="price" placeholder="Ingrese el precio">
+                        
+                        <button type="submit" (click)="createProducts()">Crear producto</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,147 @@
+.container {
+    margin: 0;
+    display: flex;
+    justify-content: end !important;
+    }
+    .cuerpoTienda{
+        display: flex;
+        width: 300px;
+    }
+    .tienda{
+        background-color:#6ECCBA;
+        align-items: center;
+        width: 300px;
+        padding-top: 100px; 
+        transition: transform 0.2s ease-in-out; 
+    }
+    .tienda:hover{
+        transform: translateX(-5px);
+    }
+    .filter{
+        font-family:"Open Sans", sans-serif;
+        text-decoration: none;
+        color: black;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        margin-top: 20px;
+        
+    }
+    .filter:hover{  
+        font-weight: bold;  
+    }
+    .ropa{
+        font-family:"Open Sans", sans-serif;
+        text-decoration: none;
+        color: black;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        margin-top: 20px; 
+    }
+    .ropa:hover{
+        font-weight: bold;
+    }
+    .accesorios{
+        font-family:"Open Sans", sans-serif;
+        text-decoration: none;
+        color: black;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+    .accesorios:hover{
+        font-weight: bold;
+    }
+    .hogar{
+        font-family:"Open Sans", sans-serif;
+        text-decoration: none;
+        color: black;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .hogar:hover{
+        font-weight: bold;
+    }
+    
+    .sale{
+        font-family:"Open Sans", sans-serif;
+        text-decoration: none;
+        color: black;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+    .sale:hover{
+        font-weight: bold;
+    }
+    
+    
+    .logofooter2 {
+        width: 250px;
+        height: 180px;
+    }
+    
+    .section1 {
+        background-color:   #FFFFE3;
+        width: 1200px;
+        display: flex;
+        justify-self: end;
+        margin-top: 0;
+    }
+    --------------------------prouctos, tajetas
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .box {
+        background-color: #FFFFE3;
+        width: 284px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+        margin-right: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .image-box {
+        width: 250px;
+        height: 250px;
+        background-color: #ddd;
+    }
+    
+    .description {
+        width: 204px;
+        height: 27px;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+    }
+    
+    .buy-button {
+        width: 89px;
+        height: 43px;
+        background-color: #FFA19C;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+    
+    .infocolor {
+        color:black
+    }
+    .buy-button1{
+        margin-right: 50px;
+        background-color: #6ECCBA;
+    }
+    h4{
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    

@@ -1,0 +1,67 @@
+.footer {
+    height: 368.42px; 
+    background-color: #FFA19C;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+}
+a{
+    text-decoration: none 
+}
+.caja_de{
+    gap: 170px;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+.logofooter {
+    height: 218px;
+    width: 213px;
+    justify-content: flex-start;
+    margin-left: 40px;
+    margin-right: 180px;
+}
+
+.box1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: black !important;
+    font-size: 17px;
+    text-decoration: none;
+    margin-right: 100px;
+    }
+    
+
+.box2 {
+/* margin-top: 30px;
+padding: 30px; */
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.buttonfooter {
+    background-color: white;
+    border-color: white;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+}
+.infocolor {
+    color: black;
+}

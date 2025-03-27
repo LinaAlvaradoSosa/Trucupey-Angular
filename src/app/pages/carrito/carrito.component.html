@@ -1,0 +1,52 @@
+<div class="d-flex justify-content-center align-items-center contenedor">
+    <div *ngIf="productosCarrito.length > 0; else carritoVacio">
+        <h2>Carrito Trucupey</h2>
+        <ul>
+            <li *ngFor="let producto of productosCarrito; let i = index">
+                <div class="listado d-flex" >
+                    <img class="imagenes" src="{{producto.imagen}}" alt="">
+                    <div class="info">
+                        <div>{{producto.name}}</div>
+                        <div>{{producto.price}}</div>
+                    </div>
+                    <button class="boton" (click)="eliminarProducto(i)">Eliminar</button>
+                    <button class="boton boton1" (click)="comprarProducto(producto)" >Pagar</button>
+                </div>
+            </li>
+        </ul>
+        <button class="boton2" (click)="vaciarCarrito()">Vaciar Carrito Trucupey</button>
+    </div>
+
+    <ng-template #carritoVacio>
+        <div class="vacio">
+            <p>Tu carrito Trucupey está vacío</p>
+            <button routerLink="/tienda" class="boton3">Ir a la tienda</button>
+        </div>
+    </ng-template>
+</div>
+
+
+
+
+<!-- 
+<div class="d-flex justify-content-center align-items-center contenedor">
+    <div *ngIf="productosCarrito.length > 0; else carritoVacio">
+        <h2>Carrito Trucupey</h2>
+        <ul>
+            <li *ngFor="let producto of productosCarrito; let i = index">
+                <div class="listado d-flex" >
+                    <img class="imagenes" src="{{producto.imagen}}" alt="">
+                    <div class="productos d-flex justify-content-center align-items-center">{{ producto.name }}</div>
+                    <div d-flex justify-content-center align-items-center>${{ producto.price }}</div> 
+                    <button class="boton" (click)="eliminarProducto(i)">Eliminar</button>
+                    <button class="boton boton1" >Pagar ahora</button>
+                </div>
+            </li>
+        </ul>
+        <button (click)="vaciarCarrito()">Vaciar Carrito Trucupey</button>
+    </div>
+
+    <ng-template #carritoVacio>
+        <p>Tu carrito está vacío 🛒</p>
+    </ng-template>
+</div> -->

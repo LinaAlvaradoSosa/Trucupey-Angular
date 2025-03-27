@@ -1,0 +1,75 @@
+.datosDeContacto{
+    margin-top: 100px;
+}
+.camisa1{
+    width: 150px;
+    height: 150px;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+}
+.primerProducto {
+    width: 500px;
+}
+.imagenPago {
+    width: 20px;
+    height: 20px;
+}
+/* estilos del modal */
+.Carrito {
+    height: 45px;
+    width: 45px;
+}
+.buscador {
+    width: 210px;
+}
+.offcanvas-header {
+    flex-direction: column;
+}
+.botonesDeCompra {
+    display: flex;
+    gap: 5px;
+    justify-content:center
+}
+.sumarYrestar {
+    width: 30px;
+    height: 30px;
+    background-color: #6ECCBA;
+}
+.offcanvas-body {
+    margin-left: 90px;
+}
+.Texto-Modal {
+    margin-left: 50px;
+}
+.linea {
+    border-bottom: 1px solid #e4dede;
+}
+.checkout {
+    background-color: #FFE266;
+    border-color: #FFE266;
+    width: 300px;
+    margin-left: 35px;
+}
+.Iva {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+.cajasRespuestas {
+    width: 500px;
+    height: 40px;
+}
+.cajasRespuestas2 {
+    height: 40px;
+    width: 246px;
+}
+.cajasRespuestas3 {
+    width: 158px;
+    height: 40px;
+} 
+.pagar {
+    background-color:#FFE266;
+    margin: 30px 0 80px 0;
+    border-color: #FFE266
+}

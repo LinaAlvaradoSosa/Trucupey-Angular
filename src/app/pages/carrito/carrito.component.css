@@ -1,0 +1,73 @@
+.contenedor {
+    margin-top: 80px;
+}
+.imagenes{
+    width: 120px;
+    height: 120px;
+    border-radius: 30px;
+}
+.boton {
+    width: 89px;
+    height: 43px;
+    background-color: #FFA19C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+.boton1{
+    background-color:#6ECCBA;
+    margin-right: 30px;
+}
+.productos{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.listado{
+    margin-top: 50px;
+}
+.info{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.boton2{
+    width: 150px;
+    height: 50px;
+    background-color: #FFE266;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 80px;
+}
+.vacio{
+    margin: 100px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+
+}
+.boton3{
+    width: 150px;
+    height: 50px;
+    background-color: #FFE266;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 60px;
+}
+p{
+    font-size: 44px;
+    color: black;
+}
