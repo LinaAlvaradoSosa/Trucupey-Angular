@@ -7,7 +7,6 @@ import { Injectable } from '@angular/core';
 export class AdmiService {
 
   apiURL: string = "http://localhost:3000/api"
-
   
   constructor(private http : HttpClient) { }
 
@@ -21,5 +20,8 @@ export class AdmiService {
   }
   obtenerToken(): string | null {
     return typeof window !== 'undefined' ? sessionStorage.getItem('token') : null;
+  }
+  sendMessage(body: any) {
+    return this.http.post(`${this.apiURL}/saveMessage`, body)
   }
 }

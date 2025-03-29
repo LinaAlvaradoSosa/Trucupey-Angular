@@ -4,6 +4,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 
+
+
 @Component({
   selector: 'app-root',
   standalone: true,

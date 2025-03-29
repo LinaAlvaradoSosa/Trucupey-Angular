@@ -9,7 +9,6 @@ export class CheckOutService {
   setProduct(product: any) {
     this.selectedProduct = product; 
   }
-  
   getProduct() {
     return this.selectedProduct; 
   }
