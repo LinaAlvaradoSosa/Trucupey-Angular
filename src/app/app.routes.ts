@@ -12,6 +12,7 @@ import { CheckOutComponent } from './pages/check-out/check-out.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { InfoCompraComponent } from './pages/info-compra/info-compra.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { GaleryComponent } from './pages/galery/galery.component';
 
 
 export const routes: Routes = [
@@ -29,5 +30,6 @@ export const routes: Routes = [
     {path: "carrito", component: CarritoComponent},
     {path: "informacion-adicional", component: InfoCompraComponent},
     {path: "contacto", component: ContactoComponent},
+    {path: "galery", component: GaleryComponent},
     { path: '**', redirectTo: 'tienda' }
 ];
