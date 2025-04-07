@@ -25,7 +25,7 @@ export class LoginComponent {
   }
   ngOnInit() {
     if (this.admiService.obtenerToken()) {
-      this.router.navigate(['administracion']);
+      this.router.navigate(['principalAdmi']);
     }
   }
   login(){
@@ -34,7 +34,7 @@ export class LoginComponent {
             next:(resApi: any)=>{
               if(resApi && resApi.token) {
                 this.admiService.guardarToken(resApi.token);
-                this.router.navigate(['administracion'])
+                this.router.navigate(['principalAdmi'])
               }
                 Swal.fire({
                     icon:'success',
@@ -47,7 +47,7 @@ export class LoginComponent {
                 Swal.fire({
                     icon:'error',
                     title:'Ups! algo esta mal',
-                    text: `${error.error}`
+                    text: 'Revisa su datos para iniciar sesion'
               })
             }
         })

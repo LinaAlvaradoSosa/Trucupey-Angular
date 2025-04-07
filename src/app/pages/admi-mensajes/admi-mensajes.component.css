@@ -1,0 +1,45 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+    text-align: center;
+    margin: 100px;
+}
+table {
+    width: 900px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+thead {
+    background-color: #333;
+    color: white;
+    text-align: left;
+}
+th {
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease-in-out;
+}
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+td {
+    padding: 12px;
+}
+.volverTrucu{
+    margin: 20px
+}
+.volverTrucu:hover {
+    transform: scale(1.05);
+}

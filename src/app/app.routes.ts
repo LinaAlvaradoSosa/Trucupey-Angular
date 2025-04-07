@@ -13,6 +13,8 @@ import { CarritoComponent } from './pages/carrito/carrito.component';
 import { InfoCompraComponent } from './pages/info-compra/info-compra.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { GaleryComponent } from './pages/galery/galery.component';
+import { PrincipalTrucupeyComponent } from './pages/principal-trucupey/principal-trucupey.component';
+import { AdmiMensajesComponent } from './pages/admi-mensajes/admi-mensajes.component';
 
 
 export const routes: Routes = [
@@ -31,5 +33,7 @@ export const routes: Routes = [
     {path: "informacion-adicional", component: InfoCompraComponent},
     {path: "contacto", component: ContactoComponent},
     {path: "galery", component: GaleryComponent},
+    {path: "principalAdmi", component: PrincipalTrucupeyComponent},
+    {path: "admi-mensajes", component: AdmiMensajesComponent},
     { path: '**', redirectTo: 'tienda' }
 ];

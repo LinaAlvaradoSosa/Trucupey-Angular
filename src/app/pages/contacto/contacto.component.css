@@ -58,3 +58,7 @@ label {
     display: flex;
     justify-content: center;
 }
+.buttonfooter2:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
