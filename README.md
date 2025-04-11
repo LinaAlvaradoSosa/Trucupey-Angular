@@ -30,7 +30,7 @@ DESCRIPTION:
 The design of this website was developed in collaboration with Matías and Ana. I served as the backend and frontend developer to build the entire website.
 Website Features: The e-commerce site includes:
 
--![Login (administrator)](https://raw.githubusercontent.com/LinaAlvaradoSosa/Trucupey-Angular/main/public/login/login.png)
+-![Login (administrator)](https://raw.githubusercontent.com/LinaAlvaradoSosa/Trucupey-Angular/public/login.png)
 
 
 -
