@@ -1,13 +1,13 @@
 <div class="contenedor">     
     <div class="buscador-container">
-        <input (input)="buscar()" [formControl]="(busqueda)" type="text" class="input-busqueda" placeholder="Buscar productos..." />
+        <input (input)="buscar()" [formControl]="busqueda" type="text" class="input-busqueda" placeholder="Buscar productos..." />
     </div>
     <table>
         <thead>
             <tr>
-                <th>Nombre del Producto</th>
-                <th>Precio</th>
-                <th>Acciones</th>
+                <th class="text-center align-middle">Nombre del Producto</th>
+                <th class="text-center align-middle">Precio</th>
+                <th class="text-center align-middle">Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -32,7 +32,7 @@
 
 <!-- MODALES ACTUALIZAR -->
 <div *ngFor="let product of products; trackBy: trackByFn">
-    <div class="modal fade" id="{{product._id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="{{product._id}}" tabindex="-1" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">

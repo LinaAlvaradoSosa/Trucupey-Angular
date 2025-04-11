@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../../core/service/products.service';
 import { CommonModule } from '@angular/common';
 import Swal from 'sweetalert2';
-import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 
 @Component({
@@ -22,18 +22,18 @@ export class AdmiComponent {
   
   constructor(private productsService: ProductsService, private fb : FormBuilder, private route: ActivatedRoute, private router: Router){
     this.formEdit = this.fb.group({
-      name: ['',[]],
-      size: ['',[]],
-      type:['',[]],
-      imagen:['',[]],
-      price:['',[]]
+      name: [''],
+      size: [''],
+      type:[''],
+      imagen:[''],
+      price:['']
     }),
     this.FormProduct =this.fb.group({
-      name: ['',[]],
-      size: ['',[]],
-      type:['',[]],
-      imagen:['',[]],
-      price:['',[]]
+      name: [''],
+      size: [''],
+      type:[''],
+      imagen:[''],
+      price:['']
     })
   }
 ngOnInit() {
@@ -65,8 +65,8 @@ deleteProduct(id: string) {
       text: "No podras revertir esta accion despues",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
+      confirmButtonColor: "#6ECCBA",
+      cancelButtonColor: "#F69D97",
       confirmButtonText: "Si!, quiero borrarlo"
     }).then((result) => {
       if (result.isConfirmed) {
@@ -89,44 +89,41 @@ deleteProduct(id: string) {
 getOneProduct (id: string) {
   this.productsService.getOneProduct(id).subscribe({
       next:(resApi: any)=>{
-          this.formEdit.patchValue({
-              name:resApi.name,
-              size:resApi.size,
-              type:resApi.type,
-              imagen:resApi.imagen,
-              price: resApi.price
+          this.formEdit.setValue({
+              name: resApi.product.name,
+              size: resApi.product.size,
+              type: resApi.product.type,
+              imagen: resApi.product.imagen,
+              price: resApi.product.price
           })
       },
       error:(error:any)=> {
           console.log(error);
-
       }
   })
 }
 update(id: string) {
   if(this.formEdit.valid) {
-  Swal.fire({
-      title: "Estas seguro de aceptar los cambios?",
-      showDenyButton: true,
-      showCancelButton: true,
-      confirmButtonText: "Guardar",
-      denyButtonText: "No guardar"
-  }).then((result) => {
-      if (result.isConfirmed) {
-      this.productsService.updateProduct(id, this.formEdit.value).subscribe({
-      next:(resApi: any) => {
-      Swal.fire("Saved!", "", "success");
-      this.ngOnInit()
-  },
-  error:(error: any) => {
+    Swal.fire({
+        title: "Estas seguro de aceptar los cambios?",
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: "Guardar",
+        denyButtonText: "No guardar"
+    }).then((result) => {
+        if (result.isConfirmed) {
+        this.productsService.updateProduct(id, this.formEdit.value).subscribe({
+        next:(resApi: any) => {    
+        Swal.fire("Saved!", "", "success");
+        this.ngOnInit()
+    }, error:(error: any) => {
       console.log(error);
       Swal.fire("Changes are not saved", "", "info");
   }
   })
   } else if (result.isDenied) {
-  Swal.fire('los cambios no han sido guardados')
+    Swal.fire('los cambios no han sido guardados')
   }
-
 });
   } else {
       Swal.fire ({
@@ -157,34 +154,17 @@ this.productsService.createProduct(this.FormProduct.value).subscribe({
   }
 })
 }
-buscar(){
-  console.log(this.busqueda.value)
-  this.productsService.getProductsByName(this.busqueda.value).subscribe({
-    next:(resApi: any) => {
-      this.products = resApi
+
+buscar() {
+  this.productsService.busqueda(this.busqueda.value).subscribe({
+    next: (resApi: any) => {
+      this.products = resApi;
     },
-    error:(error: any) =>{
-      console.log(error)
-    }
-  })
+    error: (error: any) => {
+      console.log(error);
+    },
+  });
 }
-
-
-// buscar(nombre: string) {
-//     if (nombre.trim() === '') {
-//         this.products = []; // Opción: mostrar todos los productos si el campo está vacío
-//         return;
-//     }
-
-//     this.productsService.getProductsByName(nombre).subscribe({
-//         next: (resApi: any) => {
-//             this.products = resApi;
-//         },
-//         error: (error: any) => {
-//             console.log(error);
-//         },
-//     });
-// }
 
 }
 

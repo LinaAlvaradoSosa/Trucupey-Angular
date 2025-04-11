@@ -24,4 +24,10 @@ export class AdmiService {
   sendMessage(body: any) {
     return this.http.post(`${this.apiURL}/saveMessage`, body)
   }
+  getMessages(){
+    return this.http.get(`${this.apiURL}/getMessages`)
+  }
+  deleteMessage(id: string) {
+    return this.http.delete(`${this.apiURL}/deleteMessage/${id}`)
+  }
 }

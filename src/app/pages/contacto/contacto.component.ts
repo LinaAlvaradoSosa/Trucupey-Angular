@@ -34,8 +34,9 @@ export class ContactoComponent {
         Swal.fire({
           icon:"success",
           title: "Mensaje enviado exitosamente",
-          text: `${resApi.name}, Gracias por escribirnos, nos comunicaremos contigo muy pronto`
+          text: "Gracias por escribirnos, nos comunicaremos contigo muy pronto"
         })
+        this.formSendMessage.reset();
       },
       error: (error:any) => {
         console.log(error);
@@ -47,7 +48,4 @@ export class ContactoComponent {
       }
     })
   }
-
-  // Tengo que corregir el de contacto porque no esta sirviend, hacer responsive, y la galeria.
-  // Esto del contacto debe ser parecido a register!!! debo guiarme del repositorio de Carlos 
 }

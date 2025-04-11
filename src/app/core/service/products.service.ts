@@ -29,7 +29,7 @@ export class ProductsService {
   createProduct(body: any){
     return this.http.post(`${this.apiURL}/createProduct`, body)
   }
-  getProductsByName(nombre: string){
-    return this.http.get(`${this.apiURL}/getProductsByName/${nombre}`)
+  busqueda(name: string){
+    return this.http.get(`${this.apiURL}/getProductsByName/${name}`)
   }
 }
