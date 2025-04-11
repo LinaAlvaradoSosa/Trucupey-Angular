@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+DESCRIPTION:
+The design of this website was developed in collaboration with Matías and Ana. I served as the backend and frontend developer to build the entire website.
+Website Features: The e-commerce site includes:
+
+-![ Login (administrator) ](public/login.png)
+-
+- Home (Main Page)
+- Store (filter products by category).
+- Cart (where you can delete or pay for products).
+- Customers can send a message, and it is automatically saved to the database.
+- Trucupey Gallery where you can view some of the artist's illustrations.
+- Administration, where the administrator can delete, update, and add products. They can also view messages that customers have sent and delete them if the administrator has already responded to them.
