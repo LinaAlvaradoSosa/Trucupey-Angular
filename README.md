@@ -38,4 +38,4 @@ Website Features: The e-commerce site includes:
 - Administration, where the administrator can delete, update, and add products. They can also view messages that customers have sent and delete them if the administrator has already responded to them.
 - ![Admi](public/admi.png)
 - ![Admi-products](public/admi-products.png)
-- ![Admi-contact](public/admi-contacts.png)
+- ![Admi-contacts](public/adm-contacts.png)
