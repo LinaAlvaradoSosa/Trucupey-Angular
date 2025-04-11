@@ -30,7 +30,8 @@ DESCRIPTION:
 The design of this website was developed in collaboration with Matías and Ana. I served as the backend and frontend developer to build the entire website.
 Website Features: The e-commerce site includes:
 
--![Login (administrator)](public/login)
+-![Login (administrator)](public/login/login.png)
+
 -
 - Home (Main Page)
 - Store (filter products by category).
