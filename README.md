@@ -30,11 +30,13 @@ DESCRIPTION:
 The design of this website was developed in collaboration with Matías and Ana. I served as the backend and frontend developer to build the entire website.
 Website Features: The e-commerce site includes:
 
+- ![(Home)](public/Home.png)
+- ![(Store)](public/store.png)
 -![Login (administrator)](public/login.png)
 
 -
-- Home (Main Page)
-- Store (filter products by category).
+
+
 - Cart (where you can delete or pay for products).
 - Customers can send a message, and it is automatically saved to the database.
 - Trucupey Gallery where you can view some of the artist's illustrations.
